@@ -1,6 +1,6 @@
 <!-- ==================== ANIME GIF BANNER ==================== -->
 <p align="center">
-  <img src="./banner.gif" width="100%" alt="Saptak Chaki Anime Banner" />
+  <img src="./ezgif-resized.gif" width="100%" alt="Saptak Chaki Anime Banner" />
 </p>
 
 <!-- ==================== ANIMATED NAME / AIM ==================== -->
