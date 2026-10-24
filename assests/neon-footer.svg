@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120">
+  <defs>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00F5FF"/>
+      <stop offset="50%" stop-color="#FF2BD6"/>
+      <stop offset="80%" stop-color="#168BFF"/>
+      <stop offset="100%" stop-color="#168BFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05070D" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#05070D"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- soft bg -->
+  <rect width="1200" height="120" fill="url(#bg)"/>
+
+  <!-- top neon line -->
+  <rect x="80" y="28" width="1040" height="2" fill="url(#line)" filter="url(#glow)"/>
+
+  <!-- side ticks -->
+  <path d="M80 20 L80 36" stroke="#00F5FF" stroke-width="2"/>
+  <path d="M1120 20 L1120 36" stroke="#FF2BD6" stroke-width="2"/>
+
+  <!-- center diamond -->
+  <g transform="translate(600, 28)" filter="url(#glow)">
+    <path d="M0 -7 L7 0 L0 7 L-7 0 Z" fill="#00F5FF"/>
+  </g>
+
+  <!-- main text -->
+  <text x="600" y="68" text-anchor="middle"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="16" fill="#00F5FF" filter="url(#glow)">
+    SAPTAK.exe // PYTHON FULL STACK // MIDNIGHT PROTOCOL
+  </text>
+
+  <text x="600" y="92" text-anchor="middle"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="12" fill="#8A97AB">
+    END OF TRANSMISSION  •  ACCESS LOGGED  •  STAY NEON
+  </text>
+</svg>
