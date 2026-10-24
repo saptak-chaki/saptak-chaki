@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <!-- BANNER -->
@@ -60,8 +59,16 @@
 <br>
 <img src="./assets/rgb-margin.svg" width="820" alt="">
 <br>
-<img src="./assets/jdm-rim.svg" width="340" alt="rim">
-<img src="./assets/trophies.svg" width="340" alt="trophies">
+<table align="center">
+<tr>
+<td align="center" valign="middle">
+<img src="./assets/jdm-rim.svg" width="380" alt="rim">
+</td>
+<td align="center" valign="middle">
+<img src="./assets/trophies.svg" width="480" alt="trophies">
+</td>
+</tr>
+</table>
 
 <!-- TECH STACK -->
 <img src="./assets/rgb-margin.svg" width="820" alt="">
@@ -88,6 +95,3 @@
 <img src="https://komarev.com/ghpvc/?username=saptak-chaki&label=Profile+Views&color=ff2e63&style=for-the-badge" alt="views">
 
 </div>
-```
-
-পেস্ট করে commit করো, তারপর **Ctrl+Shift+R**। GIF এখন RGB বারের কাছাকাছি চওড়া হবে।
