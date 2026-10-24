@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- BANNER -->
-<img src="./assets/rgb-margin.svg" width="700" alt="">
+<img src="./assets/rgb-margin.svg" width="780" alt="">
 <br>
 <img src="./assets/traffic-lights.svg" width="820" alt="">
 <br>
