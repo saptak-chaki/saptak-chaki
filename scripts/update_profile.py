@@ -319,7 +319,37 @@ def create_rotating_rim(languages):
   </g>
   {''.join(legend)}
 </svg>'''
+def create_trophies(streak, repos, commits, language_count):
+    specs = [
+        ("STREAK", streak, "days", [(1, "BRONZE", "#cd7f32"), (7, "SILVER", "#e8e8e8"), (30, "GOLD", "#ffd54f"), (100, "LEGEND", "#00e5ff")]),
+        ("REPOS", repos, "repos", [(1, "BRONZE", "#cd7f32"), (5, "SILVER", "#e8e8e8"), (15, "GOLD", "#ffd54f"), (30, "LEGEND", "#00e5ff")]),
+        ("COMMITS", commits, "30 days", [(1, "BRONZE", "#cd7f32"), (10, "SILVER", "#e8e8e8"), (30, "GOLD", "#ffd54f"), (100, "LEGEND", "#00e5ff")]),
+        ("STACK", language_count, "languages", [(1, "BRONZE", "#cd7f32"), (2, "SILVER", "#e8e8e8"), (3, "GOLD", "#ffd54f"), (5, "LEGEND", "#00e5ff")]),
+    ]
 
+    cards = []
+    for i, (title, value, unit, levels) in enumerate(specs):
+        rank, color = "LOCKED", "#666666"
+        for minimum, label, rank_color in levels:
+            if value >= minimum:
+                rank, color = label, rank_color
+
+        x = 20 + i * 190
+        cards.append(f'''
+        <rect x="{x}" y="24" width="170" height="146" rx="16" fill="#111111" stroke="{color}" stroke-width="2"/>
+        <circle cx="{x + 85}" cy="68" r="24" fill="#0a0a0a" stroke="{color}" stroke-width="3">
+          <animate attributeName="stroke-opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="{x + 85}" y="75" text-anchor="middle" fill="{color}" font-size="20" font-family="monospace" font-weight="bold">★</text>
+        <text x="{x + 85}" y="112" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace" font-weight="bold">{title}</text>
+        <text x="{x + 85}" y="132" text-anchor="middle" fill="{color}" font-size="13" font-family="monospace" font-weight="bold">{rank}</text>
+        <text x="{x + 85}" y="152" text-anchor="middle" fill="#aaaaaa" font-size="12" font-family="monospace">{value} {unit}</text>
+        ''')
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="780" height="190" viewBox="0 0 780 190">
+  <rect width="780" height="190" rx="18" fill="#0a0a0a"/>
+  {''.join(cards)}
+</svg>'''
 
 def save_file(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
