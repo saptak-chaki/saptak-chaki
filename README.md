@@ -8,9 +8,9 @@
 
 <img src="./ezgif-resized.gif" width="520" alt="banner">
 
-<img src="https://readme-typing-svg.demolab.com/?font=Bangers&size=28&duration=3500&pause=800&color=FF2E63&center=true&vCenter=true&width=520&height=50&lines=SAPTAK+CHAKI" alt="name">
+<img src="https://readme-typing-svg.demolab.com/?font=Bangers&size=40&duration=3500&pause=800&color=FF2E63&center=true&vCenter=true&width=780&height=70&lines=SAPTAK+CHAKI" alt="name">
 <br>
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=13&pause=1200&color=F72585&center=true&vCenter=true&width=360&height=24&lines=Python+Full+Stack+Developer" alt="role">
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=16&pause=1200&color=F72585&center=true&vCenter=true&width=520&height=30&lines=Python+Full+Stack+Developer" alt="role">
 
 <img src="./assets/about.svg" width="520" alt="about">
 
@@ -22,7 +22,7 @@
 
 <h3>🏁 Garage Stats</h3>
 <img src="https://streak-stats.demolab.com?user=saptak-chaki&theme=radical&hide_border=true&background=0D1117" width="390" alt="streak">
-<img src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" width="390" alt="stats">
+<img src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&custom_title=Saptak%20Chaki" width="390" alt="stats">
 
 <h3>🚗 Live Activity</h3>
 <img src="./assets/speedometer_streak.svg" width="170" alt="streak">
