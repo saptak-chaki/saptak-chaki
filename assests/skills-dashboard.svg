@@ -1,126 +1,83 @@
-<svg viewBox="0 0 720 1488" width="720" height="1488" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="500" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
   <style>
-    /* AE86 & Red Car Vibration */
-    @keyframes vib {
-      0% { transform: translate(0,0); }
-      25% { transform: translate(1px, -1px); }
-      50% { transform: translate(-1px, 1px); }
-      75% { transform: translate(1px, 1px); }
-      100% { transform: translate(0,0); }
-    }
-    .car-vibe { animation: vib 0.1s infinite; transform-origin: center; }
-
-    /* Headlight Blink/Flicker */
-    @keyframes flicker {
-      0%, 90%, 100% { opacity: 1; filter: drop-shadow(0 0 15px #00F5FF); }
-      92%, 96% { opacity: 0.3; filter: none; }
-    }
-    .headlight { animation: flicker 3s infinite; }
-
-    /* Exhaust Backfire (Crackle) */
-    @keyframes crackle {
-      0%, 80% { opacity: 0; transform: scale(0.5); }
-      82% { opacity: 1; transform: scale(1.2); }
-      85% { opacity: 0; transform: scale(1.5); }
-    }
-    .exhaust-fire { animation: crackle 1.5s infinite; fill: #FF4500; filter: blur(2px); }
-
-    /* Dashboard Dial Animation */
-    @keyframes dial-move {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(45deg); }
-    }
-    .needle { animation: dial-move 2s ease-in-out infinite; transform-origin: center; }
-
-    /* LCD Blink */
-    @keyframes lcd-blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-    .lcd { animation: lcd-blink 1s infinite; }
+    @keyframes vibration { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.5px); } }
+    @keyframes wheelRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes lightFlicker { 0%, 90%, 100% { opacity: 1; } 92%, 96% { opacity: 0.4; } }
+    @keyframes backfire { 0%, 90% { opacity: 0; transform: scale(0.5); } 93% { opacity: 1; transform: scale(1.4); } 95% { opacity: 0; } }
+    @keyframes hudBar { 0% { width: 100px; } 50% { width: 300px; } 100% { width: 100px; } }
+    
+    .car-group { animation: vibration 0.15s infinite; }
+    .wheel { transform-origin: center; animation: wheelRotate 0.4s linear infinite; transform-box: fill-box; }
+    .headlight { animation: lightFlicker 3s infinite; filter: url(#glow); }
+    .fire { animation: backfire 0.7s infinite; filter: url(#glow); }
+    .hud-text { font-family: 'Segoe UI', monospace; fill: #00ffff; filter: url(#glow); }
+    .progress-bar { animation: hudBar 4s infinite ease-in-out; }
   </style>
 
   <!-- Background -->
-  <rect width="720" height="1488" fill="#0A0A1A"/>
-
-  <!-- Main Image Section (Sharp redraw simulation) -->
-  <g class="car-vibe">
-    <!-- AE86 Sharp redrawn parts -->
-    <rect x="0" y="0" width="720" height="420" fill="#151525"/>
-    <!-- Simulated Image content -->
-    <image href="https://i.imgur.com/sddefault.jpg" x="0" y="0" width="720" height="420" opacity="0.9"/>
+  <rect width="1000" height="500" fill="#050505" />
+  <rect x="0" y="320" width="1000" height="180" fill="url(#roadGrad)" />
+  
+  <!-- AE86 Vector Body -->
+  <g class="car-group">
+    <!-- Main Body Shape -->
+    <path d="M150 320 L750 320 L730 250 L500 240 L300 240 L180 290 Z" fill="#ffffff" stroke="#000" stroke-width="2" />
+    <path d="M180 290 L740 290 L735 320 L165 320 Z" fill="#1a1a1a" /> <!-- Black Trueno Stripe -->
     
-    <!-- Red Car Backfire/Crackle -->
-    <circle class="exhaust-fire" cx="120" cy="220" r="10"/>
-    <circle class="exhaust-fire" cx="120" cy="220" r="6" style="animation-delay: 0.1s"/>
+    <!-- Windows -->
+    <path d="M320 250 L480 250 L470 280 L310 280 Z" fill="#002233" />
+    <path d="M500 250 L650 250 L670 280 L495 280 Z" fill="#002233" />
+
+    <!-- Headlights -->
+    <rect x="710" y="295" width="35" height="15" fill="#00ffff" class="headlight" />
     
-    <!-- AE86 Glowing Headlights -->
-    <rect class="headlight" x="115" y="195" width="65" height="45" rx="5" fill="#00F5FF" opacity="0.8"/>
-    <rect class="headlight" x="385" y="195" width="65" height="45" rx="5" fill="#00F5FF" opacity="0.8"/>
+    <!-- Wheels (Simplified Vector) -->
+    <g class="wheel" style="transform-origin: 280px 320px;">
+        <circle cx="280" cy="320" r="35" fill="#111" stroke="#444" stroke-width="4" />
+        <path d="M280 285 L280 355 M245 320 L315 320" stroke="#555" stroke-width="2" />
+    </g>
+    <g class="wheel" style="transform-origin: 620px 320px;">
+        <circle cx="620" cy="320" r="35" fill="#111" stroke="#444" stroke-width="4" />
+        <path d="M620 285 L620 355 M585 320 L655 320" stroke="#555" stroke-width="2" />
+    </g>
+
+    <!-- Exhaust Backfire -->
+    <circle cx="140" cy="315" r="15" fill="#ff4400" class="fire" />
+    <circle cx="140" cy="315" r="8" fill="#ffff00" class="fire" />
   </g>
 
-  <!-- Dashboard Frame (Upgrade) -->
-  <g transform="translate(20, 450)">
-    <!-- System Status Panel -->
-    <rect width="680" height="100" rx="15" fill="#1A1A3A" stroke="#00F5FF" stroke-width="2"/>
-    <text x="30" y="45" fill="#00F5FF" font-family="monospace" font-size="20">SYSTEM STATUS: ONLINE</text>
-    <text x="30" y="75" fill="#FF2BD6" font-family="monospace" font-size="16">DRIVER: SAPTAK CHAKI | ROLE: DEV</text>
-    <circle class="lcd" cx="640" cy="40" r="8" fill="#00FF00"/>
-  </g>
-
-  <!-- Gauges Section -->
-  <g transform="translate(20, 580)">
-    <rect width="680" height="150" rx="15" fill="#1A1A3A" stroke="#FF2BD6" stroke-width="1.5"/>
-    <!-- Dial 1 -->
-    <circle cx="100" cy="75" r="50" fill="none" stroke="#C9D4E5" stroke-width="3"/>
-    <line class="needle" x1="100" y1="75" x2="100" y2="35" stroke="#FF0000" stroke-width="4"/>
-    <!-- Dial 2 -->
-    <circle cx="270" cy="75" r="50" fill="none" stroke="#00F5FF" stroke-width="3"/>
-    <line class="needle" x1="270" y1="75" x2="270" y2="35" stroke="#FF0000" stroke-width="4" style="animation-delay: 0.5s"/>
-    <!-- Dial 3 -->
-    <circle cx="440" cy="75" r="50" fill="none" stroke="#FFFF00" stroke-width="3"/>
-    <line class="needle" x1="440" y1="75" x2="440" y2="35" stroke="#FF0000" stroke-width="4" style="animation-delay: 1s"/>
-    <!-- Dial 4 -->
-    <circle cx="610" cy="75" r="50" fill="none" stroke="#00FF00" stroke-width="3"/>
-    <line class="needle" x1="610" y1="75" x2="610" y2="35" stroke="#FF0000" stroke-width="4" style="animation-delay: 1.5s"/>
-  </g>
-
-  <!-- Skill Diagnostic (Wheel Area) -->
-  <g transform="translate(20, 750)">
-    <rect width="680" height="250" rx="15" fill="#1A1A3A" stroke="#00F5FF" stroke-width="1.5"/>
-    <circle cx="150" cy="125" r="80" fill="none" stroke="#FF2BD6" stroke-width="8" stroke-dasharray="400, 100"/>
-    <circle cx="150" cy="125" r="60" fill="#05070D"/>
+  <!-- Cyber HUD Dashboard -->
+  <g transform="translate(0, 380)">
+    <rect width="1000" height="120" fill="rgba(0,15,25,0.9)" stroke="#00ffff" stroke-width="2" />
     
-    <!-- Skill Bars -->
-    <rect x="300" y="60" width="300" height="12" rx="6" fill="#05070D"/>
-    <rect x="300" y="60" width="250" height="12" rx="6" fill="#00F5FF">
-       <animate attributeName="width" from="0" to="250" dur="2s" fill="freeze" />
-    </rect>
-    <text x="300" y="50" fill="#C9D4E5" font-family="monospace" font-size="14">PYTHON ENGINE</text>
+    <!-- Gauges -->
+    <circle cx="100" cy="60" r="40" stroke="#1a3333" stroke-width="5" fill="none" />
+    <path d="M70 85 A 40 40 0 0 1 130 85" stroke="#00ffff" stroke-width="4" fill="none" />
+    
+    <!-- Info -->
+    <text x="180" y="45" class="hud-text" font-size="24" font-weight="bold">SAPTAK.exe // SYSTEM_ONLINE</text>
+    <text x="180" y="75" class="hud-text" font-size="14" opacity="0.8">B.TECH CSE • IoT • BLOCKCHAIN • CYBER SECURITY</text>
+    
+    <!-- Progress Bar -->
+    <rect x="180" y="90" width="350" height="6" fill="#112222" />
+    <rect x="180" y="90" width="200" height="6" fill="#00ffff" class="progress-bar" />
 
-    <rect x="300" y="110" width="300" height="12" rx="6" fill="#05070D"/>
-    <rect x="300" y="110" width="200" height="12" rx="6" fill="#FF2BD6">
-       <animate attributeName="width" from="0" to="200" dur="2s" fill="freeze" />
-    </rect>
-    <text x="300" y="100" fill="#C9D4E5" font-family="monospace" font-size="14">JAVASCRIPT TURBO</text>
-
-    <rect x="300" y="160" width="300" height="12" rx="6" fill="#05070D"/>
-    <rect x="300" y="160" width="180" height="12" rx="6" fill="#FFFF00">
-       <animate attributeName="width" from="0" to="180" dur="2s" fill="freeze" />
-    </rect>
-    <text x="300" y="150" fill="#C9D4E5" font-family="monospace" font-size="14">SECURITY BRAKES</text>
+    <!-- Right Side Stats -->
+    <text x="750" y="45" class="hud-text" font-size="14">ENGINE: TRUENO 4A-GE</text>
+    <text x="750" y="70" class="hud-text" font-size="14">NETWORK: ENCRYPTED</text>
+    <text x="750" y="95" class="hud-text" font-size="14">LATENCY: 0.02ms</text>
   </g>
-
-  <!-- Tech Stack Grid -->
-  <g transform="translate(20, 1020)">
-    <rect width="680" height="150" rx="15" fill="#1A1A3A" stroke="#FF8C00" stroke-width="1.5"/>
-    <rect x="40" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd"/>
-    <rect x="190" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd" style="animation-delay: 0.2s"/>
-    <rect x="340" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd" style="animation-delay: 0.4s"/>
-    <rect x="490" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd" style="animation-delay: 0.6s"/>
-  </g>
-
-  <!-- Connect Bar -->
-  <rect x="20" y="1200" width="680" height="60" rx="10" fill="#1A1A3A"/>
-  <text x="360" y="1235" text-anchor="middle" fill="#00F5FF" font-family="monospace" font-size="14">SAPTAK.exe // MIDNIGHT PROTOCOL // END OF TRANSMISSION</text>
 </svg>
