@@ -1,83 +1,109 @@
-<svg width="1000" height="500" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="1200" viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <!-- নিওন গ্লো এবং গ্রেডিয়েন্ট -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b4d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#160f29;stop-opacity:1" />
     </linearGradient>
   </defs>
 
   <style>
-    @keyframes vibration { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.5px); } }
-    @keyframes wheelRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    @keyframes lightFlicker { 0%, 90%, 100% { opacity: 1; } 92%, 96% { opacity: 0.4; } }
-    @keyframes backfire { 0%, 90% { opacity: 0; transform: scale(0.5); } 93% { opacity: 1; transform: scale(1.4); } 95% { opacity: 0; } }
-    @keyframes hudBar { 0% { width: 100px; } 50% { width: 300px; } 100% { width: 100px; } }
-    
-    .car-group { animation: vibration 0.15s infinite; }
-    .wheel { transform-origin: center; animation: wheelRotate 0.4s linear infinite; transform-box: fill-box; }
-    .headlight { animation: lightFlicker 3s infinite; filter: url(#glow); }
-    .fire { animation: backfire 0.7s infinite; filter: url(#glow); }
-    .hud-text { font-family: 'Segoe UI', monospace; fill: #00ffff; filter: url(#glow); }
-    .progress-bar { animation: hudBar 4s infinite ease-in-out; }
+    @keyframes vibration { 0%, 100% { transform: translate(0,0); } 50% { transform: translate(1px, 1px); } }
+    @keyframes flicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } 80% { opacity: 0.9; } }
+    @keyframes rotateWheel { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes pulse { 0% { opacity: 0.4; } 50% { opacity: 1; } 100% { opacity: 0.4; } }
+    @keyframes fillBar { from { width: 0%; } to { width: 70%; } }
+
+    .car-container { animation: vibration 0.2s infinite; }
+    .neon-border { fill: none; stroke: url(#boxGrad); stroke-width: 2; filter: url(#neonGlow); }
+    .headlight-glow { fill: #00ffff; filter: url(#neonGlow); animation: flicker 2s infinite; }
+    .gauge-needle { transform-origin: center; animation: rotateWheel 4s ease-in-out infinite alternate; }
+    .skill-bar { animation: fillBar 2s ease-out forwards; }
+    .hud-text { font-family: 'Courier New', monospace; fill: #ff007f; filter: url(#neonGlow); }
   </style>
 
-  <!-- Background -->
-  <rect width="1000" height="500" fill="#050505" />
-  <rect x="0" y="320" width="1000" height="180" fill="url(#roadGrad)" />
-  
-  <!-- AE86 Vector Body -->
-  <g class="car-group">
-    <!-- Main Body Shape -->
-    <path d="M150 320 L750 320 L730 250 L500 240 L300 240 L180 290 Z" fill="#ffffff" stroke="#000" stroke-width="2" />
-    <path d="M180 290 L740 290 L735 320 L165 320 Z" fill="#1a1a1a" /> <!-- Black Trueno Stripe -->
-    
-    <!-- Windows -->
-    <path d="M320 250 L480 250 L470 280 L310 280 Z" fill="#002233" />
-    <path d="M500 250 L650 250 L670 280 L495 280 Z" fill="#002233" />
+  <!-- ব্যাকগ্রাউন্ড -->
+  <rect width="600" height="1200" fill="#0d0221" />
 
-    <!-- Headlights -->
-    <rect x="710" y="295" width="35" height="15" fill="#00ffff" class="headlight" />
+  <!-- ১. মেইন কার সেকশন (AE86 Top) -->
+  <g class="car-container">
+    <clipPath id="carClip">
+      <rect x="20" y="20" width="560" height="380" rx="20" />
+    </clipPath>
+    <image href="https://raw.githubusercontent.com/saptak-chaki/saptak-chaki1/main/assests/sddefault.jpg" 
+           x="20" y="20" width="560" height="380" preserveAspectRatio="xMidYMid slice" clip-path="url(#carClip)" />
     
-    <!-- Wheels (Simplified Vector) -->
-    <g class="wheel" style="transform-origin: 280px 320px;">
-        <circle cx="280" cy="320" r="35" fill="#111" stroke="#444" stroke-width="4" />
-        <path d="M280 285 L280 355 M245 320 L315 320" stroke="#555" stroke-width="2" />
-    </g>
-    <g class="wheel" style="transform-origin: 620px 320px;">
-        <circle cx="620" cy="320" r="35" fill="#111" stroke="#444" stroke-width="4" />
-        <path d="M620 285 L620 355 M585 320 L655 320" stroke="#555" stroke-width="2" />
-    </g>
-
-    <!-- Exhaust Backfire -->
-    <circle cx="140" cy="315" r="15" fill="#ff4400" class="fire" />
-    <circle cx="140" cy="315" r="8" fill="#ffff00" class="fire" />
+    <!-- হেডলাইট ফ্লিকার -->
+    <circle cx="95" cy="215" r="25" class="headlight-glow" opacity="0.6" />
+    <circle cx="270" cy="225" r="25" class="headlight-glow" opacity="0.6" />
   </g>
 
-  <!-- Cyber HUD Dashboard -->
-  <g transform="translate(0, 380)">
-    <rect width="1000" height="120" fill="rgba(0,15,25,0.9)" stroke="#00ffff" stroke-width="2" />
-    
-    <!-- Gauges -->
-    <circle cx="100" cy="60" r="40" stroke="#1a3333" stroke-width="5" fill="none" />
-    <path d="M70 85 A 40 40 0 0 1 130 85" stroke="#00ffff" stroke-width="4" fill="none" />
-    
-    <!-- Info -->
-    <text x="180" y="45" class="hud-text" font-size="24" font-weight="bold">SAPTAK.exe // SYSTEM_ONLINE</text>
-    <text x="180" y="75" class="hud-text" font-size="14" opacity="0.8">B.TECH CSE • IoT • BLOCKCHAIN • CYBER SECURITY</text>
-    
-    <!-- Progress Bar -->
-    <rect x="180" y="90" width="350" height="6" fill="#112222" />
-    <rect x="180" y="90" width="200" height="6" fill="#00ffff" class="progress-bar" />
+  <!-- ২. স্ট্যাটাস বক্স (Empty Box in Image) -->
+  <rect x="20" y="420" width="560" height="80" rx="10" class="neon-border" stroke="#ff007f" />
+  <text x="50" y="470" class="hud-text" font-size="24">SYSTEM STATUS: ONLINE (SAPTAK.exe)</text>
 
-    <!-- Right Side Stats -->
-    <text x="750" y="45" class="hud-text" font-size="14">ENGINE: TRUENO 4A-GE</text>
-    <text x="750" y="70" class="hud-text" font-size="14">NETWORK: ENCRYPTED</text>
-    <text x="750" y="95" class="hud-text" font-size="14">LATENCY: 0.02ms</text>
+  <!-- ৩. গজ সেকশন (Four Dials) -->
+  <rect x="20" y="520" width="560" height="100" rx="10" class="neon-border" stroke="#7000ff" />
+  <g transform="translate(80, 570)">
+    <circle r="35" fill="none" stroke="#333" stroke-width="3" />
+    <circle r="3" fill="#ff007f" />
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#ff007f" stroke-width="2" class="gauge-needle" />
   </g>
+  <g transform="translate(225, 570)">
+    <circle r="35" fill="none" stroke="#333" stroke-width="3" />
+    <circle r="3" fill="#00ffff" />
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#00ffff" stroke-width="2" class="gauge-needle" />
+  </g>
+  <g transform="translate(375, 570)">
+    <circle r="35" fill="none" stroke="#333" stroke-width="3" />
+    <circle r="3" fill="#ccff00" />
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#ccff00" stroke-width="2" class="gauge-needle" />
+  </g>
+  <g transform="translate(520, 570)">
+    <circle r="35" fill="none" stroke="#333" stroke-width="3" />
+    <circle r="3" fill="#ff4400" />
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#ff4400" stroke-width="2" class="gauge-needle" />
+  </g>
+
+  <!-- ৪. হুইল ও স্কিল বার সেকশন -->
+  <rect x="20" y="640" width="560" height="180" rx="10" class="neon-border" stroke="#00ffff" />
+  <!-- এনিমেটেড হুইল -->
+  <g transform="translate(100, 730)">
+    <circle r="60" fill="none" stroke="#ff007f" stroke-width="8" />
+    <g style="animation: rotateWheel 2s linear infinite; transform-origin: center;">
+      <circle r="50" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="10,5" />
+      <path d="M-40 0 L40 0 M0 -40 L0 40" stroke="#00ffff" stroke-width="2" />
+    </g>
+  </g>
+  <!-- স্কিল বারগুলো -->
+  <g transform="translate(250, 680)">
+    <rect x="0" y="10" width="280" height="10" rx="5" fill="#1a1a1a" />
+    <rect x="0" y="10" width="200" height="10" rx="5" fill="#ff007f" class="skill-bar" />
+    
+    <rect x="0" y="40" width="280" height="10" rx="5" fill="#1a1a1a" />
+    <rect x="0" y="40" width="150" height="10" rx="5" fill="#00ffff" class="skill-bar" />
+    
+    <rect x="0" y="70" width="280" height="10" rx="5" fill="#1a1a1a" />
+    <rect x="0" y="70" width="180" height="10" rx="5" fill="#5555ff" class="skill-bar" />
+  </g>
+
+  <!-- ৫. গ্রিড আইটেমস (Tech Inventory) -->
+  <rect x="20" y="840" width="560" height="120" rx="10" class="neon-border" stroke="#ffaa00" />
+  <g transform="translate(40, 860)">
+     <rect width="120" height="30" rx="15" fill="none" stroke="#ff007f" opacity="0.5" />
+     <rect x="135" width="120" height="30" rx="15" fill="none" stroke="#00ffff" opacity="0.5" />
+     <rect x="270" width="120" height="30" rx="15" fill="none" stroke="#ccff00" opacity="0.5" />
+     <rect x="405" width="120" height="30" rx="15" fill="none" stroke="#ff4400" opacity="0.5" />
+     
+     <rect y="40" width="120" height="30" rx="15" fill="none" stroke="#00ffff" />
+     <rect x="135" y="40" width="120" height="30" rx="15" fill="none" stroke="#ff007f" />
+  </g>
+
+  <!-- ৬. ফুটার (Social Icons) -->
+  <rect x="20" y="980" width="560" height="40" rx="5" fill="#2d1b4d" />
+  <circle cx="300" cy="1000" r="10" fill="#fff" class="status-blink" style="animation: pulse 1.5s infinite;" />
 </svg>
