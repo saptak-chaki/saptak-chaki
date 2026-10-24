@@ -1,6 +1,6 @@
 <!-- ==================== ANIME GIF BANNER ==================== -->
 <p align="center">
-  <img src="./ezgif-resized-ezgif.com-resize.gif" width="100%" alt="Saptak Chaki Anime Banner" />
+  <img src="./banner.gif" width="100%" alt="Saptak Chaki Anime Banner" />
 </p>
 
 <!-- ==================== ANIMATED NAME / AIM ==================== -->
@@ -11,44 +11,72 @@
   />
 </p>
 
+<!-- ==================== ANIMATED TAGLINE ==================== -->
 <p align="center">
-  <i>「 Code • Build • Learn • Repeat 」</i>
+  <img
+    src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1500&color=F72585&center=true&vCenter=true&width=500&lines=%E3%80%8CCode+%E2%80%A2+Build+%E2%80%A2+Learn+%E2%80%A2+Repeat%E3%80%8D"
+    alt="tagline"
+  />
 </p>
 
 ---
 
-<!-- ==================== STATS + STREAK ==================== -->
+<!-- ==================== SOCIAL LINKS ==================== -->
+<p align="center">
+  <a href="mailto:YOUR_EMAIL@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://instagram.com/YOUR_INSTAGRAM_USERNAME">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+  <a href="https://facebook.com/YOUR_FACEBOOK_USERNAME">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+  </a>
+</p>
+
+---
+
+<!-- ==================== GARAGE STATS (Streak + Contributions) ==================== -->
 <h2 align="center">🏁 Garage Stats</h2>
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117"
-    width="48%"
-    alt="GitHub Stats"
-  />
-  <img
-    src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=radical&hide_border=true&background=0D1117"
-    width="48%"
+    src="https://streak-stats.demolab.com?user=saptak-chaki&theme=radical&hide_border=true&background=0D1117"
+    width="90%"
     alt="GitHub Streak"
   />
 </p>
 
----
-
-<!-- ==================== AUTO SPEEDOMETER ==================== -->
-<h2 align="center">🚗 Commit Speedometer</h2>
-
+<!-- ==================== GITHUB STATS CARD ==================== -->
 <p align="center">
-  <img src="./assets/speedometer.svg" width="80%" alt="Automatic Commit Speedometer" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117"
+    width="90%"
+    alt="GitHub Stats"
+  />
 </p>
 
 ---
 
-<!-- ==================== AUTO JDM RIM LANGUAGE ANALYSIS ==================== -->
-<h2 align="center">⚙️ JDM Rim — Language Analysis</h2>
+<!-- ==================== 3 SEPARATE SPEEDOMETERS ==================== -->
+<h2 align="center">🚗 Live Activity Dashboard</h2>
 
 <p align="center">
-  <img src="./assets/jdm-rim.svg" width="500" alt="Automatic Language Analysis Rim" />
+  <img src="./assets/speedometer_streak.svg" width="31%" alt="Streak Meter"/>
+  <img src="./assets/speedometer_repos.svg" width="31%" alt="Repo Meter"/>
+  <img src="./assets/speedometer_commits.svg" width="31%" alt="Commit Meter"/>
+</p>
+
+---
+
+<!-- ==================== ROTATING RIM + LANGUAGE CHART ==================== -->
+<h2 align="center">⚙️ Spinning Language Rim</h2>
+
+<p align="center">
+  <img src="./assets/jdm-rim.svg" width="75%" alt="Rotating Language Rim"/>
 </p>
 
 ---
@@ -67,7 +95,7 @@
 
 <p align="center">
   <img
-    src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=radical&no-frame=true&column=4&margin-w=15&margin-h=15"
+    src="https://github-profile-trophy.vercel.app/?username=saptak-chaki&theme=radical&no-frame=true&column=4&margin-w=15&margin-h=15"
     alt="GitHub Trophies"
   />
 </p>
@@ -93,5 +121,5 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=PROFILE+VIEWS&color=ff2e63&style=for-the-badge" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=saptak-chaki&label=PROFILE+VIEWS&color=ff2e63&style=for-the-badge" alt="Profile views" />
 </p>
