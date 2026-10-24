@@ -1,23 +1,49 @@
 <div align="center">
 
-<img src="./assests/sddefault.jpg" width="100%" alt="SAPTAK.exe — Nissan Skyline GT-R R34 — Midnight Protocol"/>
+<img src="./assests/sddefault.jpg" width="100%" alt="SAPTAK.exe — 3D JDM Midnight Protocol"/>
 
 # SAPTAK.exe
 ### Saptak Chaki
 **Python Full Stack Developer**  
+`3D JDM CYBERPUNK PROFILE`
+
 IoT • Cyber Security • Blockchain
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=900&color=00F5FF&center=true&vCenter=true&width=700&height=70&lines=MIDNIGHT+PROTOCOL+INITIALIZED;Python+Full+Stack+Developer;Code+hard.+Drive+faster.+Stay+neon." alt="typing"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=00F5FF&center=true&vCenter=true&width=720&height=80&lines=MIDNIGHT+PROTOCOL+INITIALIZED;3D+JDM+Developer+Universe;Python+Full+Stack+%7C+IoT+%7C+Security;Code+hard.+Drive+faster.+Stay+neon." alt="typing"/>
 
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assests/saptak-hud.svg" width="90%" alt="SAPTAK.exe HUD"/>
+  <img src="./assests/saptak-hud.svg" width="92%" alt="3D HUD"/>
 </div>
 
 ---
+
+## SYSTEM TERMINAL
+
+```text
+> boot SAPTAK.exe --mode=midnight
+┌──────────────────────────────────────────────┐
+│  DRIVER        : SAPTAK CHAKI                │
+│  CLASS         : PYTHON FULL STACK           │
+│  WORLD         : 3D JDM CYBERPUNK            │
+│  VEHICLE       : SKYLINE GT-R R34            │
+│  STATUS        : ONLINE                      │
+│  ACCESS        : GRANTED                     │
+│  MOTTO         : Code hard. Drive faster.    │
+└──────────────────────────────────────────────┘
+```
+<div align="center">
+Launch 3D
+
+</div>
+text
+
+[ 3D WORLD ]  Neon Tokyo Expressway
+[ CAR ]       Nissan Skyline GT-R R34
+[ MODE ]      Real-time camera + road loop
 TECH STACK
 <div align="center"> <img src="https://skillicons.dev/icons?i=python,js,ts,html,css,react,nodejs,c,cpp,java,git,github,linux,vscode&theme=dark" alt="Tech stack"/> </div>
 PROJECT GARAGE
@@ -37,7 +63,7 @@ LinkedIn
 Email
 
 </div>
-<div align="center"><img src="./assests/neon-footer.svg" width="100%" alt="footer"/><br/>
-SAPTAK.exe // PYTHON FULL STACK // MIDNIGHT PROTOCOL // END OF TRANSMISSION
+<div align="center"><img src="./assests/neon-footer.svg" width="100%" alt="footer"/>
+SAPTAK.exe // 3D MIDNIGHT PROTOCOL // END OF TRANSMISSION
 
 </div> 
