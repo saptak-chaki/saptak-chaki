@@ -1,49 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300">
-  <defs>
-    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3a3a3a"/>
-      <stop offset="45%" stop-color="#141414"/>
-      <stop offset="100%" stop-color="#050505"/>
-    </linearGradient>
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff2e63"/>
-      <stop offset="50%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
-    </linearGradient>
-    <filter id="glow" x="-4%" y="-8%" width="108%" height="116%">
-      <feGaussianBlur stdDeviation="2.2" result="b"/>
-      <feMerge>
-        <feMergeNode in="b"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<table align="center" width="92%">
 
-  <rect width="920" height="300" rx="22" fill="#070707"/>
-  <rect x="8" y="8" width="904" height="284" rx="18" fill="url(#metal)" stroke="#2a2a2a" stroke-width="2"/>
-  <rect x="16" y="16" width="888" height="268" rx="14" fill="#0c0c0c"/>
-  <rect x="16" y="16" width="888" height="268" rx="14" fill="none" stroke="#222" stroke-width="8"/>
-  <rect x="16" y="16" width="888" height="268" rx="14" fill="none" stroke="url(#neon)" stroke-width="3" stroke-dasharray="90 220" stroke-linecap="round" filter="url(#glow)">
-    <animate attributeName="stroke-dashoffset" from="0" to="-620" dur="2.8s" repeatCount="indefinite"/>
-  </rect>
+<tr>
+<td align="center">
+<br>
+<img src="./ezgif-resized.gif" width="100%" alt="Saptak Chaki Anime Banner" />
+<br>
+</td>
+</tr>
 
-  <circle cx="32" cy="32" r="4" fill="#777"/>
-  <circle cx="888" cy="32" r="4" fill="#777"/>
-  <circle cx="32" cy="268" r="4" fill="#777"/>
-  <circle cx="888" cy="268" r="4" fill="#777"/>
+<tr>
+<td align="center">
+<br>
+<img src="https://readme-typing-svg.demolab.com/?font=Bangers&size=30&pause=900&color=FF2E63&center=true&vCenter=true&width=620&lines=SAPTAK+CHAKI;PYTHON+FULL+STACK+DEVELOPER" alt="Typing intro" />
+<br>
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=16&pause=1500&color=F72585&center=true&vCenter=true&width=420&lines=%E3%80%8CCode+%E2%80%A2+Build+%E2%80%A2+Learn+%E2%80%A2+Repeat%E3%80%8D" alt="tagline" />
+<br>
+</td>
+</tr>
 
-  <text x="460" y="58" text-anchor="middle" fill="#00e5ff" font-size="13" font-family="monospace">ABOUT ME</text>
-  <text x="460" y="96" text-anchor="middle" fill="#ffffff" font-size="28" font-family="monospace" font-weight="bold">SAPTAK CHAKI</text>
-  <text x="460" y="124" text-anchor="middle" fill="#ff2e63" font-size="15" font-family="monospace">Aspiring Python Full Stack Developer</text>
+<tr>
+<td align="center">
+<br>
+<img src="./assets/about.svg" width="86%" alt="About Saptak Chaki" />
+<br>
+</td>
+</tr>
 
-  <text x="460" y="164" text-anchor="middle" fill="#d5d5d5" font-size="14" font-family="monospace">I build the backend, the interface, and the small details in between.</text>
-  <text x="460" y="186" text-anchor="middle" fill="#d5d5d5" font-size="14" font-family="monospace">Focused on Python, HTML, and CSS — learning in public, one commit at a time.</text>
-  <text x="460" y="208" text-anchor="middle" fill="#d5d5d5" font-size="14" font-family="monospace">This profile is my garage: streak, commits, and the stack I am shipping.</text>
+<tr>
+<td align="center">
+<br>
+<h3>🏁 Garage Stats</h3>
+<img src="https://streak-stats.demolab.com?user=saptak-chaki&theme=radical&hide_border=true&background=0D1117" width="62%" alt="GitHub Streak" />
+<br>
+<img src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" width="66%" alt="GitHub Stats" />
+<br>
+</td>
+</tr>
 
-  <text x="180" y="250" text-anchor="middle" fill="#ff2e63" font-size="12" font-family="monospace" font-weight="bold">FOCUS</text>
-  <text x="180" y="270" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">Python Full Stack</text>
-  <text x="460" y="250" text-anchor="middle" fill="#ffd54f" font-size="12" font-family="monospace" font-weight="bold">NOW</text>
-  <text x="460" y="270" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">Python · HTML · CSS</text>
-  <text x="740" y="250" text-anchor="middle" fill="#00e5ff" font-size="12" font-family="monospace" font-weight="bold">GOAL</text>
-  <text x="740" y="270" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">Build · Learn · Ship</text>
-</svg>
+<tr>
+<td align="center">
+<br>
+<h3>🚗 Live Activity Dashboard</h3>
+<img src="./assets/speedometer_streak.svg" width="30%" alt="Streak Meter" />
+<img src="./assets/speedometer_repos.svg" width="30%" alt="Repo Meter" />
+<img src="./assets/speedometer_commits.svg" width="30%" alt="Commit Meter" />
+<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<br>
+<h3>⚙️ Spinning Language Rim</h3>
+<img src="./assets/jdm-rim.svg" width="68%" alt="Rotating Language Rim" />
+<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<br>
+<h3>💻 My Python Full Stack Garage</h3>
+<img src="https://skillicons.dev/icons?i=python,django,flask,fastapi,html,css,js,react,nodejs,mysql,postgres,mongodb,git,github,docker,linux,vscode&perline=9" width="72%" alt="Tech stack" />
+<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<br>
+<h3>🏆 Achievement Garage</h3>
+<img src="./assets/trophies.svg" width="70%" alt="Achievement Garage" />
+<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<br>
+<h3>📬 Connect With Me</h3>
+<a href="mailto:chakisaptak@gmail.com"><img src="https://img.shields.io/badge/Gmail-FF2E63?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+<a href="https://www.linkedin.com/in/saptak-chaki/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.instagram.com/__mortane__/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+<a href="https://www.facebook.com/saptak%20chaki/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
+<br><br>
+<img src="https://komarev.com/ghpvc/?username=saptak-chaki&label=PROFILE+VIEWS&color=ff2e63&style=for-the-badge" alt="Profile views" />
+<br>
+</td>
+</tr>
+
+</table>
