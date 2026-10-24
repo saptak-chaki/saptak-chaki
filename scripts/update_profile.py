@@ -356,7 +356,6 @@ def save_file(path, content):
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
 
-
 def main():
     if not USERNAME:
         raise ValueError("GITHUB_USERNAME পাওয়া যায়নি।")
@@ -365,13 +364,14 @@ def main():
     repos = get_repo_count()
     commits = get_recent_commits()
     languages = get_language_data()
+    language_count = sum(1 for amount in languages.values() if amount > 0)
 
     save_file("assets/speedometer_streak.svg", create_gauge("STREAK", streak, 30, "DAYS", "#ff6b6b"))
     save_file("assets/speedometer_repos.svg", create_gauge("REPOS", repos, 50, "REPOS", "#4dd0e1"))
     save_file("assets/speedometer_commits.svg", create_gauge("COMMITS", commits, 100, "COMMITS / 30D", "#ffd54f"))
     save_file("assets/jdm-rim.svg", create_rotating_rim(languages))
+    save_file("assets/trophies.svg", create_trophies(streak, repos, commits, language_count))
     print("All profile SVGs generated successfully.")
-
 
 if __name__ == "__main__":
     main()
