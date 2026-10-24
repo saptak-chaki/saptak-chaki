@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="330" viewBox="0 0 500 330">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#292929"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </radialGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5252"/>
+      <stop offset="100%" stop-color="#b71c1c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="500" height="330" rx="22" fill="#0a0a0a"/>
+  <text x="250" y="38" text-anchor="middle" fill="#ff3d3d"
+        font-size="23" font-family="monospace" font-weight="bold">
+    COMMIT SPEEDOMETER
+  </text>
+
+  <circle cx="250" cy="225" r="185" fill="url(#bg)" stroke="#444" stroke-width="5"/>
+
+  <!-- Speed zones -->
+  <path d="M 90.25 283.14 A 170 170 0 0 1 186.32 382.62"
+        fill="none" stroke="#00e676" stroke-width="19" filter="url(#glow)"/>
+  <path d="M 191.86 384.75 A 170 170 0 0 1 321.85 379.07"
+        fill="none" stroke="#ffd600" stroke-width="19" filter="url(#glow)"/>
+  <path d="M 327.18 376.47 A 170 170 0 0 1 409.75 283.14"
+        fill="none" stroke="#ff1744" stroke-width="19" filter="url(#glow)"/>
+
+  <line x1="95.0" y1="281.4" x2="110.9" y2="275.6" stroke="#e8e8e8" stroke-width="3" /><text x="129.7" y="273.8" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace">0</text><line x1="113.2" y1="317.3" x2="127.3" y2="307.8" stroke="#e8e8e8" stroke-width="3" /><line x1="139.6" y1="347.6" x2="151.0" y2="335.0" stroke="#e8e8e8" stroke-width="3" /><text x="164.4" y="325.1" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace">20</text><line x1="172.5" y1="370.7" x2="180.5" y2="355.7" stroke="#e8e8e8" stroke-width="3" /><line x1="210.1" y1="385.1" x2="214.2" y2="368.6" stroke="#e8e8e8" stroke-width="3" /><text x="219.0" y="354.2" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace">40</text><line x1="250.0" y1="390.0" x2="250.0" y2="373.0" stroke="#e8e8e8" stroke-width="3" /><line x1="289.9" y1="385.1" x2="285.8" y2="368.6" stroke="#e8e8e8" stroke-width="3" /><text x="281.0" y="354.2" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace">60</text><line x1="327.5" y1="370.7" x2="319.5" y2="355.7" stroke="#e8e8e8" stroke-width="3" /><line x1="360.4" y1="347.6" x2="349.0" y2="335.0" stroke="#e8e8e8" stroke-width="3" /><text x="335.6" y="325.1" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace">80</text><line x1="386.8" y1="317.3" x2="372.7" y2="307.8" stroke="#e8e8e8" stroke-width="3" /><line x1="405.0" y1="281.4" x2="389.1" y2="275.6" stroke="#e8e8e8" stroke-width="3" /><text x="370.3" y="273.8" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace">100</text>
+
+  <!-- Needle -->
+  <line x1="250" y1="225" x2="374.0" y2="270.1"
+        stroke="url(#needle)" stroke-width="9" stroke-linecap="round"
+        filter="url(#glow)"/>
+
+  <circle cx="250" cy="225" r="20" fill="#111" stroke="#f5f5f5" stroke-width="4"/>
+  <circle cx="250" cy="225" r="7" fill="#ff1744"/>
+
+  <text x="250" y="275" text-anchor="middle" fill="#ff1744"
+        font-size="22" font-family="monospace" font-weight="bold">
+    REDLINE
+  </text>
+
+  <text x="250" y="302" text-anchor="middle" fill="#ffffff"
+        font-size="16" font-family="monospace">
+    1000 COMMITS / LAST 30 DAYS
+  </text>
+</svg>
