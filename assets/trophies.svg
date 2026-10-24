@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="190" viewBox="0 0 780 190">
+  <rect width="780" height="190" rx="18" fill="#0a0a0a"/>
+  
+        <rect x="20" y="24" width="170" height="146" rx="16" fill="#111111" stroke="#666666" stroke-width="2"/>
+        <circle cx="105" cy="68" r="24" fill="#0a0a0a" stroke="#666666" stroke-width="3">
+          <animate attributeName="stroke-opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="105" y="75" text-anchor="middle" fill="#666666" font-size="20" font-family="monospace" font-weight="bold">★</text>
+        <text x="105" y="112" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace" font-weight="bold">STREAK</text>
+        <text x="105" y="132" text-anchor="middle" fill="#666666" font-size="13" font-family="monospace" font-weight="bold">LOCKED</text>
+        <text x="105" y="152" text-anchor="middle" fill="#aaaaaa" font-size="12" font-family="monospace">0 days</text>
+        
+        <rect x="210" y="24" width="170" height="146" rx="16" fill="#111111" stroke="#e8e8e8" stroke-width="2"/>
+        <circle cx="295" cy="68" r="24" fill="#0a0a0a" stroke="#e8e8e8" stroke-width="3">
+          <animate attributeName="stroke-opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="295" y="75" text-anchor="middle" fill="#e8e8e8" font-size="20" font-family="monospace" font-weight="bold">★</text>
+        <text x="295" y="112" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace" font-weight="bold">REPOS</text>
+        <text x="295" y="132" text-anchor="middle" fill="#e8e8e8" font-size="13" font-family="monospace" font-weight="bold">SILVER</text>
+        <text x="295" y="152" text-anchor="middle" fill="#aaaaaa" font-size="12" font-family="monospace">5 repos</text>
+        
+        <rect x="400" y="24" width="170" height="146" rx="16" fill="#111111" stroke="#00e5ff" stroke-width="2"/>
+        <circle cx="485" cy="68" r="24" fill="#0a0a0a" stroke="#00e5ff" stroke-width="3">
+          <animate attributeName="stroke-opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="485" y="75" text-anchor="middle" fill="#00e5ff" font-size="20" font-family="monospace" font-weight="bold">★</text>
+        <text x="485" y="112" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace" font-weight="bold">COMMITS</text>
+        <text x="485" y="132" text-anchor="middle" fill="#00e5ff" font-size="13" font-family="monospace" font-weight="bold">LEGEND</text>
+        <text x="485" y="152" text-anchor="middle" fill="#aaaaaa" font-size="12" font-family="monospace">300 30 days</text>
+        
+        <rect x="590" y="24" width="170" height="146" rx="16" fill="#111111" stroke="#ffd54f" stroke-width="2"/>
+        <circle cx="675" cy="68" r="24" fill="#0a0a0a" stroke="#ffd54f" stroke-width="3">
+          <animate attributeName="stroke-opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="675" y="75" text-anchor="middle" fill="#ffd54f" font-size="20" font-family="monospace" font-weight="bold">★</text>
+        <text x="675" y="112" text-anchor="middle" fill="#ffffff" font-size="13" font-family="monospace" font-weight="bold">STACK</text>
+        <text x="675" y="132" text-anchor="middle" fill="#ffd54f" font-size="13" font-family="monospace" font-weight="bold">GOLD</text>
+        <text x="675" y="152" text-anchor="middle" fill="#aaaaaa" font-size="12" font-family="monospace">4 languages</text>
+        
+</svg>
