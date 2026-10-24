@@ -1,6 +1,6 @@
 <table align="center" width="100%">
 <tr>
-<td width="18" valign="top" align="center"><img src="./assets/rgb-side.svg" width="14" height="4500" alt="rgb"></td>
+<td width="18" valign="top" align="center"><img src="./assets/rgb-side.svg" width="14" height="4800" alt="rgb"></td>
 
 <td align="center" width="100%">
 
@@ -61,11 +61,11 @@
 <a href="https://www.instagram.com/__mortane__"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 <a href="https://www.facebook.com/share/1DdgpPWgnf"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
 <br><br>
-<img src="https://komarev.com/ghpvc/?username=saptak-chaki&label=Profile+Views&color=ff2e63&style=for-the-badge&logo=github&logoColor=white" alt="views"><br>
+<img src="https://img.shields.io/badge/Profile_Views-1k+-ff2e63?style=for-the-badge&logo=github&logoColor=white" alt="Profile views"><br>
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb">
 
 </td>
 
-<td width="18" valign="top" align="center"><img src="./assets/rgb-side.svg" width="14" height="4500" alt="rgb"></td>
+<td width="18" valign="top" align="center"><img src="./assets/rgb-side.svg" width="14" height="4800" alt="rgb"></td>
 </tr>
 </table>
