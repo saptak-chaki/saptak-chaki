@@ -15,8 +15,8 @@
 <td width="16" valign="middle" align="center"><img src="./assets/rgb-side.svg" width="12" height="170" alt="rgb"></td>
 <td align="center">
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
-<img src="https://readme-typing-svg.demolab.com/?font=Bangers&size=58&duration=4000&pause=900&color=FF2E63&center=true&vCenter=true&width=980&height=120&lines=SAPTAK+CHAKI" width="100%" alt="Saptak Chaki"><br>
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1400&color=F72585&center=true&vCenter=true&width=520&height=40&lines=Python+Full+Stack+Developer" alt="role"><br>
+<img src="https://readme-typing-svg.demolab.com/?font=Bangers&size=72&duration=4000&pause=900&color=FF2E63&center=true&vCenter=true&width=980&height=140&lines=HelLGuY" width="100%" alt="HelLGuY"><br>
+<img src="https://readme-typing-svg.demolab.com/?font=Bangers&size=26&pause=900&color=FF2E63&center=true&vCenter=true&width=800&height=50&lines=welcome+to+HELLL+GUYSSSS" alt="welcome"><br>
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb">
 </td>
 <td width="16" valign="middle" align="center"><img src="./assets/rgb-side.svg" width="12" height="170" alt="rgb"></td>
@@ -28,7 +28,7 @@
 <td width="16" valign="middle" align="center"><img src="./assets/rgb-side.svg" width="12" height="250" alt="rgb"></td>
 <td align="center">
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
-<img src="./assets/about.svg" width="88%" alt="About Saptak Chaki"><br>
+<img src="./assets/about.svg" width="88%" alt="About HelLGuY"><br>
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb">
 </td>
 <td width="16" valign="middle" align="center"><img src="./assets/rgb-side.svg" width="12" height="250" alt="rgb"></td>
@@ -114,16 +114,9 @@
 <a href="https://www.instagram.com/__mortane__"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 <a href="https://www.facebook.com/share/1DdgpPWgnf"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
 <br><br>
-<img src="https://komarev.com/ghpvc/?username=saptak-chaki&label=PROFILE+VIEWS&color=ff2e63&style=for-the-badge" alt="Profile views"><br>
+<img src="https://img.shields.io/github/profile-views/saptak-chaki?color=ff2e63&style=for-the-badge&logo=github&logoColor=white" alt="Profile views"><br>
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb">
 </td>
 <td width="16" valign="middle" align="center"><img src="./assets/rgb-side.svg" width="12" height="150" alt="rgb"></td>
 </tr>
-</table>
-<table align="center" width="100%">
-<tr>
-<td width="16" valign="middle" align="center"><img src="./assets/rgb-side.svg" width="12" height="150" alt="rgb"></td>
-<td align="center">
-<img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
-<img src="https://img.shields.io/github/profile-views/saptak-chaki?color=ff2e63&style=for-the-badge&logo=github&logoColor=white" alt="Profile views"><br>
 </table>
