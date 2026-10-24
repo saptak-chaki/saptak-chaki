@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070D"/>
+      <stop offset="100%" stop-color="#0A1020"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="50%" stop-color="#168BFF"/>
+      <stop offset="100%" stop-color="#FF2BD6"/>
+    </linearGradient>
+
+    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#168BFF"/>
+    </linearGradient>
+
+    <linearGradient id="barMag" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2BD6"/>
+      <stop offset="100%" stop-color="#168BFF"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- background panel -->
+  <rect x="10" y="10" width="1180" height="500" rx="16"
+        fill="url(#bg)" stroke="url(#neon)" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- title -->
+  <text x="600" y="48" text-anchor="middle"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="26" font-weight="700" fill="#00F5FF" filter="url(#glow)">
+    SKILLS ARSENAL // CONTROL MODULES
+  </text>
+  <text x="600" y="72" text-anchor="middle"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="12" fill="#C9D4E5">
+    PYTHON FULL STACK  •  SYSTEMS  •  SECURITY  •  TOOLS
+  </text>
+
+  <!-- ========== CARD 1: CORE ========== -->
+  <g transform="translate(40, 100)">
+    <rect width="350" height="170" rx="12" fill="#070B14" stroke="#00F5FF" stroke-width="1.5" opacity="0.95"/>
+    <text x="20" y="32" font-family="Consolas, monospace" font-size="16" fill="#00F5FF">CORE LANGUAGES</text>
+    <text x="20" y="60" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Python</text>
+    <rect x="20" y="68" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="68" width="270" height="8" rx="4" fill="url(#barCyan)"/>
+
+    <text x="20" y="100" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">JavaScript / TypeScript</text>
+    <rect x="20" y="108" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="108" width="230" height="8" rx="4" fill="url(#barCyan)"/>
+
+    <text x="20" y="140" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">C / C++ / Java / HTML / CSS</text>
+    <rect x="20" y="148" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="148" width="200" height="8" rx="4" fill="url(#barCyan)"/>
+  </g>
+
+  <!-- ========== CARD 2: FULL STACK ========== -->
+  <g transform="translate(425, 100)">
+    <rect width="350" height="170" rx="12" fill="#070B14" stroke="#FF2BD6" stroke-width="1.5" opacity="0.95"/>
+    <text x="20" y="32" font-family="Consolas, monospace" font-size="16" fill="#FF2BD6">FULL STACK</text>
+    <text x="20" y="60" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Django / Flask / FastAPI</text>
+    <rect x="20" y="68" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="68" width="250" height="8" rx="4" fill="url(#barMag)"/>
+
+    <text x="20" y="100" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">React / Node.js / REST API</text>
+    <rect x="20" y="108" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="108" width="220" height="8" rx="4" fill="url(#barMag)"/>
+
+    <text x="20" y="140" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">MySQL / PostgreSQL / MongoDB</text>
+    <rect x="20" y="148" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="148" width="210" height="8" rx="4" fill="url(#barMag)"/>
+  </g>
+
+  <!-- ========== CARD 3: SECURITY / IOT ========== -->
+  <g transform="translate(810, 100)">
+    <rect width="350" height="170" rx="12" fill="#070B14" stroke="#168BFF" stroke-width="1.5" opacity="0.95"/>
+    <text x="20" y="32" font-family="Consolas, monospace" font-size="16" fill="#168BFF">SECURITY / IoT / WEB3</text>
+    <text x="20" y="60" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Linux / Network Security</text>
+    <rect x="20" y="68" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="68" width="230" height="8" rx="4" fill="#168BFF"/>
+
+    <text x="20" y="100" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">IoT / Embedded Basics</text>
+    <rect x="20" y="108" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="108" width="200" height="8" rx="4" fill="#168BFF"/>
+
+    <text x="20" y="140" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Secure Coding / Web3 Basics</text>
+    <rect x="20" y="148" width="300" height="8" rx="4" fill="#121822"/>
+    <rect x="20" y="148" width="190" height="8" rx="4" fill="#168BFF"/>
+  </g>
+
+  <!-- ========== CARD 4: TOOLS ========== -->
+  <g transform="translate(40, 300)">
+    <rect width="1120" height="180" rx="12" fill="#070B14" stroke="#00F5FF" stroke-width="1.5" opacity="0.95"/>
+    <text x="30" y="36" font-family="Consolas, monospace" font-size="16" fill="#00F5FF">TOOLS &amp; PLATFORMS</text>
+
+    <!-- tool chips -->
+    <g font-family="Consolas, monospace" font-size="14">
+      <rect x="30" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#00F5FF" stroke-width="1.2"/>
+      <text x="85" y="83" text-anchor="middle" fill="#00F5FF">Git</text>
+
+      <rect x="155" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#00F5FF" stroke-width="1.2"/>
+      <text x="210" y="83" text-anchor="middle" fill="#00F5FF">GitHub</text>
+
+      <rect x="280" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#00F5FF" stroke-width="1.2"/>
+      <text x="335" y="83" text-anchor="middle" fill="#00F5FF">VS Code</text>
+
+      <rect x="405" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#FF2BD6" stroke-width="1.2"/>
+      <text x="460" y="83" text-anchor="middle" fill="#FF2BD6">Linux</text>
+
+      <rect x="530" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#FF2BD6" stroke-width="1.2"/>
+      <text x="585" y="83" text-anchor="middle" fill="#FF2BD6">Terminal</text>
+
+      <rect x="655" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#168BFF" stroke-width="1.2"/>
+      <text x="710" y="83" text-anchor="middle" fill="#168BFF">Postman</text>
+
+      <rect x="780" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#168BFF" stroke-width="1.2"/>
+      <text x="835" y="83" text-anchor="middle" fill="#168BFF">Docker</text>
+
+      <rect x="905" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#C9D4E5" stroke-width="1.2"/>
+      <text x="960" y="83" text-anchor="middle" fill="#C9D4E5">Windows</text>
+    </g>
+
+    <text x="30" y="140" font-family="Consolas, monospace" font-size="13" fill="#8A97AB">
+      STATUS: MODULES LOADED  •  PROTOCOL: MIDNIGHT  •  DRIVER: SAPTAK
+    </text>
+    <text x="30" y="162" font-family="Consolas, monospace" font-size="12" fill="#5A6A80">
+      Note: bars are visual only — edit skills anytime in README
+    </text>
+  </g>
+</svg>
