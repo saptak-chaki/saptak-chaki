@@ -1,53 +1,52 @@
 <div align="center">
 
-<img src="./assests/sddefault.jpg" width="100%" alt="SAPTAK.exe — 3D JDM Midnight Protocol"/>
-<div align="center">
+  <img src="./assests/sddefault.jpg" width="100%" alt="SAPTAK.exe — 3D JDM Midnight Protocol"/>
 
-<br/>
+  <br/>
 
-[![LAUNCH 3D UNIVERSE](https://img.shields.io/badge/⚡_LAUNCH_3D_EXPERIENCE-CLICK_HERE-00F5FF?style=for-the-badge&logo=three.js&logoColor=black&labelColor=05070D)](https://saptak-chaki.github.io/saptak-exe-3d/)
+  [![LAUNCH 3D UNIVERSE](https://img.shields.io/badge/⚡_LAUNCH_3D_EXPERIENCE-CLICK_HERE-00F5FF?style=for-the-badge&logo=three.js&logoColor=black&labelColor=05070D)](https://saptak-chaki.github.io/saptak-exe-3d/)
 
-<br/>
-<sub>🚀 Click above to enter real-time 3D JDM Cyberpunk Midnight Protocol</sub>
-<br/><br/>
+  <br/>
+  <sub>🚀 Click above to enter real-time 3D JDM Cyberpunk Midnight Protocol</sub>
 
-</div>
+  <h1>SAPTAK.exe</h1>
+  <h3>Saptak Chaki</h3>
+  <p><b>Python Full Stack Developer</b><br/>IoT • Cyber Security • Blockchain</p>
 
-# SAPTAK.exe
-### Saptak Chaki
-**Python Full Stack Developer**  
-`3D JDM CYBERPUNK PROFILE`
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=00F5FF&center=true&vCenter=true&width=720&height=80&lines=MIDNIGHT+PROTOCOL+INITIALIZED;3D+JDM+Developer+Universe;Python+Full+Stack+%7C+IoT+%7C+Security;Code+hard.+Drive+faster.+Stay+neon." alt="typing"/>
 
-IoT • Cyber Security • Blockchain
+  <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=00F5FF&center=true&vCenter=true&width=720&height=80&lines=MIDNIGHT+PROTOCOL+INITIALIZED;3D+JDM+Developer+Universe;Python+Full+Stack+%7C+IoT+%7C+Security;Code+hard.+Drive+faster.+Stay+neon." alt="typing"/>
+  <svg width="92%" viewBox="0 0 1100 180" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="hudg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#00F5FF"/>
+        <stop offset="1" stop-color="#FF2BD6"/>
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="1080" height="160" rx="14" fill="#05070D" stroke="url(#hudg)" stroke-width="2"/>
+    <text x="550" y="68" text-anchor="middle" font-family="monospace" font-size="34" fill="#00F5FF">SAPTAK.exe</text>
+    <text x="550" y="104" text-anchor="middle" font-family="monospace" font-size="15" fill="#C9D4E5">SYSTEM STATUS: ONLINE • DRIVER ID: SAPTAK • ACCESS GRANTED</text>
+    <text x="550" y="140" text-anchor="middle" font-family="monospace" font-size="14" fill="#FF2BD6">PYTHON FULL STACK // MIDNIGHT PROTOCOL</text>
+  </svg>
 
 </div>
 
 ---
 
-<div align="center">
-  <img src="./assests/saptak-hud.svg" width="92%" alt="3D HUD"/>
-</div>
-
----
-
-## SYSTEM TERMINAL
+## ABOUT ME — SYSTEM TERMINAL
 
 ```text
 > boot SAPTAK.exe --mode=midnight
 ┌──────────────────────────────────────────────┐
-│  DRIVER        : SAPTAK CHAKI                │
-│  CLASS         : PYTHON FULL STACK           │
-│  WORLD         : 3D JDM CYBERPUNK            │
-│  VEHICLE       : SKYLINE GT-R R34            │
-│  STATUS        : ONLINE                      │
-│  ACCESS        : GRANTED                     │
-│  MOTTO         : Code hard. Drive faster.    │
+│  DRIVER   : SAPTAK CHAKI                     │
+│  CLASS    : PYTHON FULL STACK                │
+│  WORLD    : 3D JDM CYBERPUNK                 │
+│  VEHICLE  : SKYLINE GT-R R34                 │
+│  STATUS   : ONLINE                           │
+│  ACCESS   : GRANTED                          │
+│  MOTTO    : Code hard. Drive faster.         │
 └──────────────────────────────────────────────┘
-```
-<div align="center">
-Launch 3D
 
 </div>
 text
