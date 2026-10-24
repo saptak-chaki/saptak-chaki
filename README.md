@@ -23,8 +23,16 @@
 <img src="./assets/traffic-lights.svg" width="100%" alt="lights"><br>
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
 <h3>🏁 Garage Stats</h3>
-<img src="https://streak-stats.demolab.com?user=saptak-chaki&theme=radical&hide_border=true&background=0D1117" width="58%" alt="streak"><br>
-<img src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" width="62%" alt="stats">
+<table align="center">
+<tr>
+<td align="center" width="50%">
+<img src="https://streak-stats.demolab.com?user=saptak-chaki&theme=radical&hide_border=true&background=0D1117" width="100%" alt="streak">
+</td>
+<td align="center" width="50%">
+<img src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" width="100%" alt="stats">
+</td>
+</tr>
+</table>
 
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
 <img src="./assets/traffic-lights.svg" width="100%" alt="lights"><br>
