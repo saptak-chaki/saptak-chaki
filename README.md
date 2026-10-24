@@ -126,8 +126,4 @@
 <td align="center">
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
 <img src="https://img.shields.io/github/profile-views/saptak-chaki?color=ff2e63&style=for-the-badge&logo=github&logoColor=white" alt="Profile views"><br>
-<img src="./assets/rgb-margin.svg" width="100%" alt="rgb">
-</td>
-<td width="16" valign="middle" align="center"><img src="./assets/rgb-side.svg" width="12" height="150" alt="rgb"></td>
-</tr>
 </table>
