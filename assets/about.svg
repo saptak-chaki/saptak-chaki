@@ -1,17 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320">
   <defs>
-    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3a3a3a"/>
-      <stop offset="45%" stop-color="#141414"/>
-      <stop offset="100%" stop-color="#050505"/>
-    </linearGradient>
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff2e63"/>
-      <stop offset="50%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
+    <linearGradient id="rgb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="25%" stop-color="#ffea00"/>
+      <stop offset="50%" stop-color="#00e676"/>
+      <stop offset="75%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#7c4dff"/>
     </linearGradient>
     <filter id="glow" x="-4%" y="-8%" width="108%" height="116%">
-      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
       <feMerge>
         <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
@@ -19,31 +16,26 @@
     </filter>
   </defs>
 
-  <rect width="920" height="300" rx="22" fill="#070707"/>
-  <rect x="8" y="8" width="904" height="284" rx="18" fill="url(#metal)" stroke="#2a2a2a" stroke-width="2"/>
-  <rect x="16" y="16" width="888" height="268" rx="14" fill="#0c0c0c"/>
-  <rect x="16" y="16" width="888" height="268" rx="14" fill="none" stroke="#222" stroke-width="8"/>
-  <rect x="16" y="16" width="888" height="268" rx="14" fill="none" stroke="url(#neon)" stroke-width="3" stroke-dasharray="90 220" stroke-linecap="round" filter="url(#glow)">
-    <animate attributeName="stroke-dashoffset" from="0" to="-620" dur="2.8s" repeatCount="indefinite"/>
+  <rect width="920" height="320" rx="24" fill="#070709"/>
+  <rect x="10" y="10" width="900" height="300" rx="20" fill="none" stroke="url(#rgb)" stroke-width="5" filter="url(#glow)"/>
+  <rect x="10" y="10" width="900" height="300" rx="20" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="70 860" stroke-linecap="round" opacity="0.85">
+    <animate attributeName="stroke-dashoffset" from="0" to="-930" dur="2.8s" repeatCount="indefinite"/>
   </rect>
+  <rect x="22" y="22" width="876" height="276" rx="16" fill="#101014"/>
 
-  <circle cx="32" cy="32" r="4" fill="#777"/>
-  <circle cx="888" cy="32" r="4" fill="#777"/>
-  <circle cx="32" cy="268" r="4" fill="#777"/>
-  <circle cx="888" cy="268" r="4" fill="#777"/>
+  <text x="460" y="62" text-anchor="middle" fill="#7ee7ff" font-size="13" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700" letter-spacing="3">ABOUT ME</text>
+  <text x="460" y="108" text-anchor="middle" fill="#ffffff" font-size="40" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="4">Saptak Chaki</text>
+  <text x="460" y="140" text-anchor="middle" fill="#ff4d8d" font-size="18" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="600">Aspiring Python Full Stack Developer</text>
 
-  <text x="460" y="58" text-anchor="middle" fill="#00e5ff" font-size="13" font-family="monospace">ABOUT ME</text>
-  <text x="460" y="96" text-anchor="middle" fill="#ffffff" font-size="28" font-family="monospace" font-weight="bold">SAPTAK CHAKI</text>
-  <text x="460" y="124" text-anchor="middle" fill="#ff2e63" font-size="15" font-family="monospace">Aspiring Python Full Stack Developer</text>
+  <rect x="360" y="156" width="200" height="3" rx="1.5" fill="url(#rgb)"/>
 
-  <text x="460" y="164" text-anchor="middle" fill="#d5d5d5" font-size="14" font-family="monospace">I build the backend, the interface, and the small details in between.</text>
-  <text x="460" y="186" text-anchor="middle" fill="#d5d5d5" font-size="14" font-family="monospace">Focused on Python, HTML, and CSS — learning in public, one commit at a time.</text>
-  <text x="460" y="208" text-anchor="middle" fill="#d5d5d5" font-size="14" font-family="monospace">This profile is my garage: streak, commits, and the stack I am shipping.</text>
+  <text x="460" y="196" text-anchor="middle" fill="#e6e6e6" font-size="17" font-family="'Segoe UI', Verdana, Arial, sans-serif">I build the backend, the interface, and the details in between.</text>
+  <text x="460" y="224" text-anchor="middle" fill="#c8c8c8" font-size="17" font-family="'Segoe UI', Verdana, Arial, sans-serif">Python, HTML, and CSS — learning in public, one commit at a time.</text>
 
-  <text x="180" y="250" text-anchor="middle" fill="#ff2e63" font-size="12" font-family="monospace" font-weight="bold">FOCUS</text>
-  <text x="180" y="270" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">Python Full Stack</text>
-  <text x="460" y="250" text-anchor="middle" fill="#ffd54f" font-size="12" font-family="monospace" font-weight="bold">NOW</text>
-  <text x="460" y="270" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">Python · HTML · CSS</text>
-  <text x="740" y="250" text-anchor="middle" fill="#00e5ff" font-size="12" font-family="monospace" font-weight="bold">GOAL</text>
-  <text x="740" y="270" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">Build · Learn · Ship</text>
+  <text x="190" y="276" text-anchor="middle" fill="#ff4d8d" font-size="13" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700">FOCUS</text>
+  <text x="190" y="296" text-anchor="middle" fill="#ffffff" font-size="14" font-family="'Segoe UI', Verdana, Arial, sans-serif">Python Full Stack</text>
+  <text x="460" y="276" text-anchor="middle" fill="#ffea00" font-size="13" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700">NOW</text>
+  <text x="460" y="296" text-anchor="middle" fill="#ffffff" font-size="14" font-family="'Segoe UI', Verdana, Arial, sans-serif">Python · HTML · CSS</text>
+  <text x="730" y="276" text-anchor="middle" fill="#00e5ff" font-size="13" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700">GOAL</text>
+  <text x="730" y="296" text-anchor="middle" fill="#ffffff" font-size="14" font-family="'Segoe UI', Verdana, Arial, sans-serif">Build · Learn · Ship</text>
 </svg>
