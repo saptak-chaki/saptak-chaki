@@ -23,7 +23,7 @@
 <img src="./assets/about.svg" width="88%" alt="about"><br>
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb">
 
-<!-- GARAGE STATS (ছোট + পাশাপাশি) -->
+<!-- GARAGE STATS -->
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
 <img src="./assets/race-arrows.svg" width="100%" alt="arrows"><br>
 <h3>🏁 Garage Stats</h3>
