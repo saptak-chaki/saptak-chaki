@@ -110,3 +110,16 @@ ROLE           : PYTHON FULL STACK DEVELOPER
   <p><code>SAPTAK.exe // PYTHON FULL STACK // MIDNIGHT PROTOCOL // END OF TRANSMISSION</code></p>
 
 </div>
+<div align="center">
+
+  <img src="./assests/sddefault.jpg" width="100%" alt="SAPTAK.exe — Nissan Skyline GT-R R34 — Midnight Protocol"/>
+
+  <h1>SAPTAK.exe</h1>
+  <h3>Python Full Stack Developer</h3>
+  <p>IoT • Cyber Security • Blockchain</p>
+
+  <p>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=900&color=00F5FF&center=true&vCenter=true&width=700&height=70&lines=MIDNIGHT+PROTOCOL+INITIALIZED;Python+Full+Stack+Developer;Code+hard.+Drive+faster.+Stay+neon." alt="typing"/>
+  </p>
+
+</div>
