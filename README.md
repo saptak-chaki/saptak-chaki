@@ -18,21 +18,9 @@ IoT • Cyber Security • Blockchain
 </div>
 
 ---
-
-## ABOUT ME
-
-text
-NAME     : Saptak Chaki
-ROLE     : Python Full Stack Developer
-FOCUS    : IoT • Cyber Security • Blockchain
-MOTTO    : Code hard. Drive faster. Stay neon.
-STATUS   : ONLINE
-
 TECH STACK
 <div align="center"> <img src="https://skillicons.dev/icons?i=python,js,ts,html,css,react,nodejs,c,cpp,java,git,github,linux,vscode&theme=dark" alt="Tech stack"/> </div>
 PROJECT GARAGE
-নিচের REPO_1 আর REPO_2 বদলে তোমার আসল repo নাম লিখো।
-
 <div align="center"><a href="https://github.com/saptak-chaki/REPO_1"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=saptak-chaki&repo=REPO_1&theme=radical&hide_border=true&bg_color=05070D&title_color=00F5FF&icon_color=FF2BD6&text_color=C9D4E5" alt="repo1"/> </a><a href="https://github.com/saptak-chaki/REPO_2"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=saptak-chaki&repo=REPO_2&theme=radical&hide_border=true&bg_color=05070D&title_color=00F5FF&icon_color=FF2BD6&text_color=C9D4E5" alt="repo2"/> </a></div>
 ENGINE IGNITION — STREAK
 <div align="center"> <img src="https://streak-stats.demolab.com/?user=saptak-chaki&theme=radical&hide_border=true&background=05070D&ring=00F5FF&fire=FF2BD6&currStreakLabel=00F5FF&sideLabels=C9D4E5&dates=C9D4E5" alt="Streak"/> </div>
