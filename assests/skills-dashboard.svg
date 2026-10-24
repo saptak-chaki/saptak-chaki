@@ -1,139 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070D"/>
-      <stop offset="100%" stop-color="#0A1020"/>
-    </linearGradient>
+<svg viewBox="0 0 720 1488" width="720" height="1488" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* AE86 & Red Car Vibration */
+    @keyframes vib {
+      0% { transform: translate(0,0); }
+      25% { transform: translate(1px, -1px); }
+      50% { transform: translate(-1px, 1px); }
+      75% { transform: translate(1px, 1px); }
+      100% { transform: translate(0,0); }
+    }
+    .car-vibe { animation: vib 0.1s infinite; transform-origin: center; }
 
-    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="50%" stop-color="#168BFF"/>
-      <stop offset="100%" stop-color="#FF2BD6"/>
-    </linearGradient>
+    /* Headlight Blink/Flicker */
+    @keyframes flicker {
+      0%, 90%, 100% { opacity: 1; filter: drop-shadow(0 0 15px #00F5FF); }
+      92%, 96% { opacity: 0.3; filter: none; }
+    }
+    .headlight { animation: flicker 3s infinite; }
 
-    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="100%" stop-color="#168BFF"/>
-    </linearGradient>
+    /* Exhaust Backfire (Crackle) */
+    @keyframes crackle {
+      0%, 80% { opacity: 0; transform: scale(0.5); }
+      82% { opacity: 1; transform: scale(1.2); }
+      85% { opacity: 0; transform: scale(1.5); }
+    }
+    .exhaust-fire { animation: crackle 1.5s infinite; fill: #FF4500; filter: blur(2px); }
 
-    <linearGradient id="barMag" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF2BD6"/>
-      <stop offset="100%" stop-color="#168BFF"/>
-    </linearGradient>
+    /* Dashboard Dial Animation */
+    @keyframes dial-move {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(45deg); }
+    }
+    .needle { animation: dial-move 2s ease-in-out infinite; transform-origin: center; }
 
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge>
-        <feMergeNode in="b"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+    /* LCD Blink */
+    @keyframes lcd-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .lcd { animation: lcd-blink 1s infinite; }
+  </style>
 
-  <!-- background panel -->
-  <rect x="10" y="10" width="1180" height="500" rx="16"
-        fill="url(#bg)" stroke="url(#neon)" stroke-width="2" filter="url(#glow)"/>
+  <!-- Background -->
+  <rect width="720" height="1488" fill="#0A0A1A"/>
 
-  <!-- title -->
-  <text x="600" y="48" text-anchor="middle"
-        font-family="Consolas, 'Courier New', monospace"
-        font-size="26" font-weight="700" fill="#00F5FF" filter="url(#glow)">
-    SKILLS ARSENAL // CONTROL MODULES
-  </text>
-  <text x="600" y="72" text-anchor="middle"
-        font-family="Consolas, 'Courier New', monospace"
-        font-size="12" fill="#C9D4E5">
-    PYTHON FULL STACK  •  SYSTEMS  •  SECURITY  •  TOOLS
-  </text>
-
-  <!-- ========== CARD 1: CORE ========== -->
-  <g transform="translate(40, 100)">
-    <rect width="350" height="170" rx="12" fill="#070B14" stroke="#00F5FF" stroke-width="1.5" opacity="0.95"/>
-    <text x="20" y="32" font-family="Consolas, monospace" font-size="16" fill="#00F5FF">CORE LANGUAGES</text>
-    <text x="20" y="60" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Python</text>
-    <rect x="20" y="68" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="68" width="270" height="8" rx="4" fill="url(#barCyan)"/>
-
-    <text x="20" y="100" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">JavaScript / TypeScript</text>
-    <rect x="20" y="108" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="108" width="230" height="8" rx="4" fill="url(#barCyan)"/>
-
-    <text x="20" y="140" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">C / C++ / Java / HTML / CSS</text>
-    <rect x="20" y="148" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="148" width="200" height="8" rx="4" fill="url(#barCyan)"/>
+  <!-- Main Image Section (Sharp redraw simulation) -->
+  <g class="car-vibe">
+    <!-- AE86 Sharp redrawn parts -->
+    <rect x="0" y="0" width="720" height="420" fill="#151525"/>
+    <!-- Simulated Image content -->
+    <image href="https://i.imgur.com/sddefault.jpg" x="0" y="0" width="720" height="420" opacity="0.9"/>
+    
+    <!-- Red Car Backfire/Crackle -->
+    <circle class="exhaust-fire" cx="120" cy="220" r="10"/>
+    <circle class="exhaust-fire" cx="120" cy="220" r="6" style="animation-delay: 0.1s"/>
+    
+    <!-- AE86 Glowing Headlights -->
+    <rect class="headlight" x="115" y="195" width="65" height="45" rx="5" fill="#00F5FF" opacity="0.8"/>
+    <rect class="headlight" x="385" y="195" width="65" height="45" rx="5" fill="#00F5FF" opacity="0.8"/>
   </g>
 
-  <!-- ========== CARD 2: FULL STACK ========== -->
-  <g transform="translate(425, 100)">
-    <rect width="350" height="170" rx="12" fill="#070B14" stroke="#FF2BD6" stroke-width="1.5" opacity="0.95"/>
-    <text x="20" y="32" font-family="Consolas, monospace" font-size="16" fill="#FF2BD6">FULL STACK</text>
-    <text x="20" y="60" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Django / Flask / FastAPI</text>
-    <rect x="20" y="68" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="68" width="250" height="8" rx="4" fill="url(#barMag)"/>
-
-    <text x="20" y="100" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">React / Node.js / REST API</text>
-    <rect x="20" y="108" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="108" width="220" height="8" rx="4" fill="url(#barMag)"/>
-
-    <text x="20" y="140" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">MySQL / PostgreSQL / MongoDB</text>
-    <rect x="20" y="148" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="148" width="210" height="8" rx="4" fill="url(#barMag)"/>
+  <!-- Dashboard Frame (Upgrade) -->
+  <g transform="translate(20, 450)">
+    <!-- System Status Panel -->
+    <rect width="680" height="100" rx="15" fill="#1A1A3A" stroke="#00F5FF" stroke-width="2"/>
+    <text x="30" y="45" fill="#00F5FF" font-family="monospace" font-size="20">SYSTEM STATUS: ONLINE</text>
+    <text x="30" y="75" fill="#FF2BD6" font-family="monospace" font-size="16">DRIVER: SAPTAK CHAKI | ROLE: DEV</text>
+    <circle class="lcd" cx="640" cy="40" r="8" fill="#00FF00"/>
   </g>
 
-  <!-- ========== CARD 3: SECURITY / IOT ========== -->
-  <g transform="translate(810, 100)">
-    <rect width="350" height="170" rx="12" fill="#070B14" stroke="#168BFF" stroke-width="1.5" opacity="0.95"/>
-    <text x="20" y="32" font-family="Consolas, monospace" font-size="16" fill="#168BFF">SECURITY / IoT / WEB3</text>
-    <text x="20" y="60" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Linux / Network Security</text>
-    <rect x="20" y="68" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="68" width="230" height="8" rx="4" fill="#168BFF"/>
-
-    <text x="20" y="100" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">IoT / Embedded Basics</text>
-    <rect x="20" y="108" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="108" width="200" height="8" rx="4" fill="#168BFF"/>
-
-    <text x="20" y="140" font-family="Consolas, monospace" font-size="13" fill="#C9D4E5">Secure Coding / Web3 Basics</text>
-    <rect x="20" y="148" width="300" height="8" rx="4" fill="#121822"/>
-    <rect x="20" y="148" width="190" height="8" rx="4" fill="#168BFF"/>
+  <!-- Gauges Section -->
+  <g transform="translate(20, 580)">
+    <rect width="680" height="150" rx="15" fill="#1A1A3A" stroke="#FF2BD6" stroke-width="1.5"/>
+    <!-- Dial 1 -->
+    <circle cx="100" cy="75" r="50" fill="none" stroke="#C9D4E5" stroke-width="3"/>
+    <line class="needle" x1="100" y1="75" x2="100" y2="35" stroke="#FF0000" stroke-width="4"/>
+    <!-- Dial 2 -->
+    <circle cx="270" cy="75" r="50" fill="none" stroke="#00F5FF" stroke-width="3"/>
+    <line class="needle" x1="270" y1="75" x2="270" y2="35" stroke="#FF0000" stroke-width="4" style="animation-delay: 0.5s"/>
+    <!-- Dial 3 -->
+    <circle cx="440" cy="75" r="50" fill="none" stroke="#FFFF00" stroke-width="3"/>
+    <line class="needle" x1="440" y1="75" x2="440" y2="35" stroke="#FF0000" stroke-width="4" style="animation-delay: 1s"/>
+    <!-- Dial 4 -->
+    <circle cx="610" cy="75" r="50" fill="none" stroke="#00FF00" stroke-width="3"/>
+    <line class="needle" x1="610" y1="75" x2="610" y2="35" stroke="#FF0000" stroke-width="4" style="animation-delay: 1.5s"/>
   </g>
 
-  <!-- ========== CARD 4: TOOLS ========== -->
-  <g transform="translate(40, 300)">
-    <rect width="1120" height="180" rx="12" fill="#070B14" stroke="#00F5FF" stroke-width="1.5" opacity="0.95"/>
-    <text x="30" y="36" font-family="Consolas, monospace" font-size="16" fill="#00F5FF">TOOLS &amp; PLATFORMS</text>
+  <!-- Skill Diagnostic (Wheel Area) -->
+  <g transform="translate(20, 750)">
+    <rect width="680" height="250" rx="15" fill="#1A1A3A" stroke="#00F5FF" stroke-width="1.5"/>
+    <circle cx="150" cy="125" r="80" fill="none" stroke="#FF2BD6" stroke-width="8" stroke-dasharray="400, 100"/>
+    <circle cx="150" cy="125" r="60" fill="#05070D"/>
+    
+    <!-- Skill Bars -->
+    <rect x="300" y="60" width="300" height="12" rx="6" fill="#05070D"/>
+    <rect x="300" y="60" width="250" height="12" rx="6" fill="#00F5FF">
+       <animate attributeName="width" from="0" to="250" dur="2s" fill="freeze" />
+    </rect>
+    <text x="300" y="50" fill="#C9D4E5" font-family="monospace" font-size="14">PYTHON ENGINE</text>
 
-    <!-- tool chips -->
-    <g font-family="Consolas, monospace" font-size="14">
-      <rect x="30" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#00F5FF" stroke-width="1.2"/>
-      <text x="85" y="83" text-anchor="middle" fill="#00F5FF">Git</text>
+    <rect x="300" y="110" width="300" height="12" rx="6" fill="#05070D"/>
+    <rect x="300" y="110" width="200" height="12" rx="6" fill="#FF2BD6">
+       <animate attributeName="width" from="0" to="200" dur="2s" fill="freeze" />
+    </rect>
+    <text x="300" y="100" fill="#C9D4E5" font-family="monospace" font-size="14">JAVASCRIPT TURBO</text>
 
-      <rect x="155" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#00F5FF" stroke-width="1.2"/>
-      <text x="210" y="83" text-anchor="middle" fill="#00F5FF">GitHub</text>
-
-      <rect x="280" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#00F5FF" stroke-width="1.2"/>
-      <text x="335" y="83" text-anchor="middle" fill="#00F5FF">VS Code</text>
-
-      <rect x="405" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#FF2BD6" stroke-width="1.2"/>
-      <text x="460" y="83" text-anchor="middle" fill="#FF2BD6">Linux</text>
-
-      <rect x="530" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#FF2BD6" stroke-width="1.2"/>
-      <text x="585" y="83" text-anchor="middle" fill="#FF2BD6">Terminal</text>
-
-      <rect x="655" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#168BFF" stroke-width="1.2"/>
-      <text x="710" y="83" text-anchor="middle" fill="#168BFF">Postman</text>
-
-      <rect x="780" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#168BFF" stroke-width="1.2"/>
-      <text x="835" y="83" text-anchor="middle" fill="#168BFF">Docker</text>
-
-      <rect x="905" y="60" width="110" height="36" rx="8" fill="#0A1020" stroke="#C9D4E5" stroke-width="1.2"/>
-      <text x="960" y="83" text-anchor="middle" fill="#C9D4E5">Windows</text>
-    </g>
-
-    <text x="30" y="140" font-family="Consolas, monospace" font-size="13" fill="#8A97AB">
-      STATUS: MODULES LOADED  •  PROTOCOL: MIDNIGHT  •  DRIVER: SAPTAK
-    </text>
-    <text x="30" y="162" font-family="Consolas, monospace" font-size="12" fill="#5A6A80">
-      Note: bars are visual only — edit skills anytime in README
-    </text>
+    <rect x="300" y="160" width="300" height="12" rx="6" fill="#05070D"/>
+    <rect x="300" y="160" width="180" height="12" rx="6" fill="#FFFF00">
+       <animate attributeName="width" from="0" to="180" dur="2s" fill="freeze" />
+    </rect>
+    <text x="300" y="150" fill="#C9D4E5" font-family="monospace" font-size="14">SECURITY BRAKES</text>
   </g>
+
+  <!-- Tech Stack Grid -->
+  <g transform="translate(20, 1020)">
+    <rect width="680" height="150" rx="15" fill="#1A1A3A" stroke="#FF8C00" stroke-width="1.5"/>
+    <rect x="40" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd"/>
+    <rect x="190" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd" style="animation-delay: 0.2s"/>
+    <rect x="340" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd" style="animation-delay: 0.4s"/>
+    <rect x="490" y="30" width="130" height="40" rx="8" fill="#05070D" stroke="#00F5FF" class="lcd" style="animation-delay: 0.6s"/>
+  </g>
+
+  <!-- Connect Bar -->
+  <rect x="20" y="1200" width="680" height="60" rx="10" fill="#1A1A3A"/>
+  <text x="360" y="1235" text-anchor="middle" fill="#00F5FF" font-family="monospace" font-size="14">SAPTAK.exe // MIDNIGHT PROTOCOL // END OF TRANSMISSION</text>
 </svg>
