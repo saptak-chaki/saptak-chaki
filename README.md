@@ -1,13 +1,14 @@
+
 <div align="center">
 
 <!-- BANNER -->
-<img src="./assets/rgb-margin.svg" width="780" alt="">
+<img src="./assets/rgb-margin.svg" width="820" alt="">
 <br>
 <img src="./assets/traffic-lights.svg" width="820" alt="">
 <br>
 <img src="./assets/rgb-margin.svg" width="820" alt="">
 <br>
-<img src="./ezgif-resized.gif" width="520" alt="banner">
+<img src="./ezgif-resized.gif" width="780" alt="banner">
 
 <!-- NAME -->
 <img src="./assets/rgb-margin.svg" width="820" alt="">
@@ -87,3 +88,6 @@
 <img src="https://komarev.com/ghpvc/?username=saptak-chaki&label=Profile+Views&color=ff2e63&style=for-the-badge" alt="views">
 
 </div>
+```
+
+পেস্ট করে commit করো, তারপর **Ctrl+Shift+R**। GIF এখন RGB বারের কাছাকাছি চওড়া হবে।
