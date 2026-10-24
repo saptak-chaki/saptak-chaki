@@ -1,0 +1,48 @@
+name: Update Profile Dashboard
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # প্রতি 6 ঘণ্টা পরপর
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "assets/speedometer.svg"
+      - "assets/jdm-rim.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile-assets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate Speedometer and JDM Rim
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/update_profile.py
+
+      - name: Commit updated SVG files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/speedometer.svg assets/jdm-rim.svg
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update profile dashboard"
+            git push
+          fi
