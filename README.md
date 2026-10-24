@@ -23,17 +23,17 @@
 <img src="./assets/about.svg" width="88%" alt="about"><br>
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb">
 
-<!-- GARAGE STATS -->
+<!-- GARAGE STATS (ছোট + পাশাপাশি) -->
 <img src="./assets/rgb-margin.svg" width="100%" alt="rgb"><br>
 <img src="./assets/race-arrows.svg" width="100%" alt="arrows"><br>
 <h3>🏁 Garage Stats</h3>
 <table align="center">
 <tr>
-<td align="center" width="50%">
-<img src="https://streak-stats.demolab.com?user=saptak-chaki&theme=radical&hide_border=true&background=0D1117" width="100%" alt="streak">
+<td align="center">
+<img src="https://streak-stats.demolab.com?user=saptak-chaki&theme=radical&hide_border=true&background=0D1117" width="320" alt="streak">
 </td>
-<td align="center" width="50%">
-<img src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&custom_title=Saptak%20Chaki" width="100%" alt="stats">
+<td align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=saptak-chaki&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&custom_title=Saptak%20Chaki" width="320" alt="stats">
 </td>
 </tr>
 </table>
