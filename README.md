@@ -94,10 +94,7 @@
 <h2 align="center">🏆 Achievement Garage</h2>
 
 <p align="center">
-  <img
-    src="https://github-profile-trophy.vercel.app/?username=saptak-chaki&theme=radical&no-frame=true&column=4&margin-w=15&margin-h=15"
-    alt="GitHub Trophies"
-  />
+  <img src="./assets/trophies.svg" width="90%" alt="Achievement Garage" />
 </p>
 
 ---
