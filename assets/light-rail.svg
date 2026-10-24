@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="54" viewBox="0 0 1200 54">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="18%" stop-color="#1c1c1c"/>
+      <stop offset="78%" stop-color="#0b0b0b"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff2e63" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#ff2e63"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-1.2;1" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="-0.2;2" dur="2.6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="slot">
+      <rect x="58" y="23" width="1084" height="8" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <rect x="28" y="10" width="1144" height="34" rx="17" fill="url(#metal)" stroke="#2a2a2a"/>
+  <rect x="36" y="13" width="1128" height="7" rx="3.5" fill="#ffffff" opacity="0.16"/>
+  <rect x="36" y="34" width="1128" height="6" rx="3" fill="#000000" opacity="0.55"/>
+
+  <circle cx="42" cy="27" r="7" fill="#151515" stroke="#666"/>
+  <circle cx="42" cy="27" r="2.5" fill="#00e5ff">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1158" cy="27" r="7" fill="#151515" stroke="#666"/>
+  <circle cx="1158" cy="27" r="2.5" fill="#ff2e63">
+    <animate attributeName="opacity" values="0.25;1;0.25" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <g clip-path="url(#slot)" filter="url(#glow)">
+    <rect x="58" y="23" width="1084" height="8" rx="4" fill="#070707"/>
+    <rect x="58" y="23" width="1084" height="8" rx="4" fill="url(#light)"/>
+  </g>
+</svg>
