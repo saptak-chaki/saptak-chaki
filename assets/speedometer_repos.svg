@@ -24,11 +24,11 @@
   <text x="82.3" y="143.6" text-anchor="middle" fill="#ddd" font-size="10" font-family="monospace">0</text><text x="101.8" y="172.5" text-anchor="middle" fill="#ddd" font-size="10" font-family="monospace">10</text><text x="132.6" y="188.9" text-anchor="middle" fill="#ddd" font-size="10" font-family="monospace">20</text><text x="167.4" y="188.9" text-anchor="middle" fill="#ddd" font-size="10" font-family="monospace">30</text><text x="198.2" y="172.5" text-anchor="middle" fill="#ddd" font-size="10" font-family="monospace">40</text><text x="217.7" y="143.6" text-anchor="middle" fill="#ddd" font-size="10" font-family="monospace">50</text>
   <g filter="url(#glow-REPOS)">
     <line x1="150" y1="115" x2="79.5" y2="140.7" stroke="#ff3b3b" stroke-width="5" stroke-linecap="round">
-      <animateTransform attributeName="transform" type="rotate" from="0 150 115" to="-14.0 150 115" dur="1.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 150 115" to="-11.2 150 115" dur="1.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
     </line>
   </g>
   <circle cx="150" cy="115" r="10" fill="#111" stroke="#fff" stroke-width="3"/>
   <circle cx="150" cy="115" r="4" fill="#ff1744"/>
   <text x="150" y="190" text-anchor="middle" fill="#00e676" font-size="15" font-family="monospace" font-weight="bold">CHILL</text>
-  <text x="150" y="208" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">5 REPOS</text>
+  <text x="150" y="208" text-anchor="middle" fill="#ffffff" font-size="12" font-family="monospace">4 REPOS</text>
 </svg>
